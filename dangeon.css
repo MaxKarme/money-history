@@ -1,0 +1,62 @@
+body {
+  background: url("./img/dang.png") no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+
+.door {
+  cursor: pointer;
+  position: absolute;
+  transition: .5s opacity ease;
+  opacity: .8;
+  top: 26.4vw;
+  border-bottom: 3.4vw solid transparent;
+  height: 16.6vw;
+  width: 0px;
+}
+
+.mid-door {
+  top: 25vw;
+  left: 43.75vw;
+  width: 14.48vw;
+  height: 11.8vw;
+  background: #8a8a8a;
+}
+
+.door::before {
+  content: '';
+  margin-top: -12.6vw;
+  display: block;
+  width: 12.8vw;
+  height: 12.8vw;
+  background: #8a8a8a;
+  border-radius: 50% 50% 0 0;
+}
+
+
+.mid-door::before {
+  margin-top: -14.4vw;
+  width: 14.48vw;
+  height: 14.48vw;
+}
+
+.left-door::before {
+  position: absolute;
+  margin-left: -12.8vw;
+}
+
+.door:hover {
+  opacity: .9;
+}
+
+.left-door {
+  left: 10.5%;
+  border-left: 12.8vw solid #8a8a8a;
+}
+
+.right-door {    
+  right: 8.34%;
+  border-right: 12.8vw solid #8a8a8a;
+  border-bottom: 3.9vw solid transparent;
+}

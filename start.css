@@ -1,0 +1,47 @@
+body {
+  background: url("./img/Start_1.jpg") no-repeat;
+  background-size: cover;
+}
+
+.door {
+  cursor: pointer;
+  position: absolute;
+  transition: .5s opacity ease;
+  opacity: .3;
+  top: 9.4vw;
+  border-bottom: 3.55vw solid transparent;
+  height: 23.8vw;
+  width: 0px;
+}
+
+.door:hover {
+  opacity: .9;
+}
+
+.left-door {
+  left: 7.1%;
+  border-left: 10.22vw solid #8a8a8a;
+}
+
+.right-door {    
+  right: 7.1%;
+  border-right: 10.22vw solid #8a8a8a;
+}
+
+
+.btn {
+  padding: 0;
+  position: absolute;
+  width: 1.5vw;
+  height: 1.5vw;
+  top: 26vw;
+  left: 52%;
+  border-radius: 50%;
+  border-top: 0.2vw solid black;
+  border-left: 0.3vw solid black;
+  border-bottom: 0.3vw solid black;
+  border-right: 0.2vw solid black;
+  background: #da1d1b;
+  box-shadow: inset -0.3vw 0.3vw 0.2vw 0px #bbbbbbd1;
+  cursor: pointer;
+}

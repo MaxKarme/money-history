@@ -1,0 +1,282 @@
+body {
+  background: #83C1F0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: .5s transform ease;
+}
+
+a:hover {
+  transform: scale(1.1);
+  z-index: 1000;
+}
+
+.closet {
+  position: relative;
+  margin: 20px auto;
+  width: 40%;
+  height: 72vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #c8762a;
+  border-radius: 18px;
+}
+
+.closet::before {
+  top: 100%;
+  left: 2vw;
+  position: absolute;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5vw solid #925215;
+  border-top: 0vw solid transparent;
+  border-bottom: 5vw solid transparent;
+}
+
+.closet::after {
+  top: 100%;
+  right: 2vw;
+  position: absolute;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 5vw solid #925215;
+  border-top: 0vw solid transparent;
+  border-bottom: 5vw solid transparent;
+}
+
+.closet__board {
+  position: relative;
+  width: 31vw;
+  height: 12vw;
+  background: #a25423;
+}
+
+.closet__book {
+  position: absolute;
+  width: 3vw;
+  height: 8vw;
+  display: none;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+
+.closet__book_red {
+  background: #e10706;
+  bottom: 0;
+  left: 2vw;
+  display: block;
+}
+
+
+.closet__book_green {
+  display: block;
+  bottom: 0;
+  left: 5vw;
+  background: #A0D42E;
+}
+
+.closet__book_yeallow {
+  background: #D2A42C;
+  display: block;
+  bottom: 0;
+  left: 11vw;
+}
+
+.closet__book_green2 {
+  background: #0FA125;
+  display: block;
+  bottom: 3vw;
+  left: 26.5vw;
+  transform: rotate(-90deg);
+  transform-origin: 0 100%;
+}
+
+.closet__book_blue {
+  background: #26C1B9;
+  display: block;
+  bottom: 0vw;
+  left: 29.2vw;
+  transform: rotate(-90deg);
+  transform-origin: 0 100%;
+}
+
+.closet__book_blue2 {
+  background: #0778E2;
+  display: block;
+  left: 1vw;
+  bottom: 0;
+}
+
+.closet__book_orange {
+  background: #E08C0F;
+  display: block;
+  left: 4vw;
+  bottom: 0;
+}
+
+.closet__book_yeallow2 {
+  background: #CCA313;
+  display: block;
+  left: 10vw;
+  bottom: 0;
+}
+
+.closet__book_purple {
+  background: #C0489F;
+  display: block;
+  left: 13vw;
+  bottom: 0;
+}
+
+.closet__book_pink {
+  background: #D83C3D;
+  display: block;
+  left: 18vw;
+  bottom: 0;
+  transform-origin: 100% 100%;
+  transform: rotate(43deg);
+}
+
+.closet__book_green3 {
+  background: #17A170;
+  display: block;
+  left: 23.3vw;
+  bottom: 0;
+  transform-origin: 100% 100%;
+  transform: rotate(35deg);
+}
+
+.closet__book_blue3 {
+  background: #1326CB;
+  display: block;
+  bottom: 3vw;
+  left: 12vw;
+  transform: rotate(-90deg);
+  transform-origin: 0 100%;
+}
+
+.closet__book_brown {
+  background: #C06C48;
+  display: block;
+  bottom: 0vw;
+  left: 9.5vw;
+  transform: rotate(-90deg);
+  transform-origin: 0 100%;
+}
+
+.closet__book_green4 {
+  background: #8CC117;
+  display: block;
+  bottom: 0vw;
+  left: 13vw;
+}
+
+.closet__book_purple2 {
+  background: #C04890;
+  display: block;
+  bottom: 0vw;
+  left: 17.5vw;
+}
+
+.closet__book_red2 {
+  background: #BA2020;
+  display: block;
+  bottom: 0vw;
+  left: 22vw;
+}
+
+.closet__book_pink3 {
+  background: #DA2F59;
+  display: block;
+  bottom: 0vw;
+  left: 25vw;
+}
+
+.closet__book_green5 {
+  background: #597D0F;
+  display: block;
+  bottom: 0vw;
+  left: 3vw;
+}
+
+.closet__book_red3 {
+  background: #AC0E6D;
+  display: block;
+  bottom: 0vw;
+  left: 16vw;
+  transform: rotate(-90deg);
+  transform-origin: 0 100%;
+}
+
+.closet__book_purple3 {
+  background: #A41236;
+  display: block;
+  bottom: 3vw;
+  left: 20.25vw;
+  transform: rotate(-90deg);
+  transform-origin: 0 100%;
+}
+
+.closet__book_red4 {
+  background: #A41010;
+  display: block;
+  bottom: 0vw;
+  left: 25vw;
+  transform: rotate(-90deg);
+  transform-origin: 0 100%;
+}
+
+.closet__book_red5 {
+  background: #A9280B;
+  display: block;
+  bottom: 0vw;
+  left: 27vw;
+}
+
+@media(max-width: 500px) {
+  .closet {
+    transform: scale(1.5);
+    margin-top: 20vw;
+  }
+}
+
+@media(max-width: 700px) {
+  .closet::before {
+    left: 3vw;
+  }
+
+  .closet::after {
+    right: 3vw;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

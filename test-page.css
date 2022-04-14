@@ -1,0 +1,153 @@
+body {
+  background: url("./img/bgTest.png") no-repeat;
+  background-size: cover;
+}
+
+.test-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.test {
+  margin-top: 50px;
+  width: 40vw;
+  height: 25vw;
+  position: relative;
+}
+
+.test__card {
+  position: absolute;
+  width: 50vw;
+  height: 25vw;
+  border: 3px solid #b2afaf;
+  padding: 20px 20px;
+  border-radius: 6px;
+  background: white;
+  transition: .5s opacity ease, .5s transform ease;
+  font-family: sans-serif;
+  transform: translate(10%, 10%);
+  opacity: 0;
+}
+
+.active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.test__title {
+  font-size: 20px;
+}
+
+.test__card.disabled {
+  display: none;
+}
+
+.test__answers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.test__card {
+  margin-left: 5px;
+}
+
+.test__btn {
+  border: none;
+  padding: 8px 20px;
+  font-size: 16px;
+  background: #7a7777;
+  cursor: pointer;
+  color: white;
+  transition: .5s all ease;
+  margin-top: 25px;
+}
+
+.test__btn:hover {
+  background: #4779bf;
+}
+
+@media(min-width: 1300px) {
+  .test__card {
+    width: 50vw;
+    height: 25vw;
+    padding: 20px 20px;
+  }
+
+  
+  .test__title {
+    font-size: 30px;
+  }
+
+  .test__list-answer {
+    font-size: 20px;
+  }
+}
+
+
+@media(min-width: 1700px) {
+  .test__card {
+    width: 40vw;
+    height: 15vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+  }
+}
+
+
+@media(max-width: 800px) {
+  .test {
+    margin-top: 10px;
+  }
+
+  .test__card {
+    width: 50vw;
+    height: 35vw;
+    padding: 20px 20px;
+  }
+
+  
+  .test__title {
+    font-size: 13px;
+  }
+
+  .test__list-answer {
+    font-size: 12px;
+  }
+
+  .test__btn {
+    font-size: 12px;
+  }
+}
+
+
+@media(max-width: 500px) {
+  .test {
+    margin-top: 10px;
+    width: 60vw;
+  }
+
+  .test__card {
+    width: 50vw;
+    height: 50vw;
+    padding: 20px 20px;
+    min-height: 150px;
+    min-width: 200px;
+  }
+
+  
+  .test__title {
+    font-size: 13px;
+  }
+
+  .test__list-answer {
+    font-size: 12px;
+  }
+
+  .test__btn {
+    font-size: 12px;
+    margin-top: 0;
+    padding: 5px 10px;
+  }
+}

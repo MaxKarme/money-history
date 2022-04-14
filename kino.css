@@ -1,0 +1,24 @@
+body {
+  background: url("./img/kino.jpg") no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 1vw;
+}
+
+
+.text {
+  position: absolute;
+  color: white;
+}
+
+
+.video {
+  width: 59%;
+  height: 25vw;
+}
